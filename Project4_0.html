@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Project 4.0</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Portfolio</strong> by Rune</a>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/runemannaerts151/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+										<li><a href="https://twitter.com/w3bd3v2" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+										<li><a href="https://github.com/RuneMannaerts" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Project 4.0</h1>
+									</header>
+
+									<span class="image main"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+										<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/wq-ySmDLKKM" title="Project IOT" allowfullscreen></iframe>
+									  </div></span>
+									<h2>Assignment</h2>
+									<p>The general assignment was to build an e-commerce web application for small to medium businesses. This web application needed to have the latest technologies like NextJS and Java SpringBoot. The web application needed to be built with different modules, so the customer could add or remove features without the need to change the entire architecture. The web application needed to be headless so the front end and backend could communicate with API’s.</p>
+
+									<hr class="major" />
+
+									<h2>The customer</h2>
+									<p>The customer was Elision, a company who built web solutions for small to medium companies. They provided End to End Commerce, Customer Engagement, Continuous Engagement, Continuous Optimization, and Managed services. They were an SAP partner, but they wanted us to develop a solution without SAP, so the smaller customers could afford it.</p>
+
+									<hr class="major" />
+
+									<h2>the group</h2>
+									<span class="image main-smaller"><img src="images/project4_0_groep.jpg" alt="" /></span>
+
+									<hr class="major" />
+									<h2>Expectations</h2>
+									<p>The client wanted us to build an e-commerce web application with the newest technologies. The clients expected us to deliver this web application in the form of a cloud environment with all the configurations made. The web application needed to be publicly accessible through AWS route 53. There needed to be a scalability group and a load balancer so a larger customer could ask for 3 instances and smaller companies could ask for only 1 instance. There also needed to be a monitoring system and backups at regular intervals, and the client had to be able to choose the time between the backups.</p>
+
+									<hr class="major" />
+
+									<h2>My Part</h2>
+									<h3>Deployment workflow</h3>
+									<p>When there was a new feature merged into our development branch, a Jenkins pipeline started. This pipeline copied the code from our development branch and sent it to SonarQube. When there was less than 80% code coverage by unit tests, the pipeline stopped. If there was more than 80% code coverage, the pipeline deployed the frontend and the backend to the AWS development environment.</p>
+									<span class="image main-smaller"><img src="images/workflow.jpg" alt="" /></span>
+
+									<h3>Stable development environment</h3>
+									<p>When our development environment is stable, we can trigger a pipeline which will send everything to our production AWS environment. </p>
+									<span class="image main-smaller"><img src="images/stable workflow.jpg" alt="" /></span>
+
+									<h3>Load balancer</h3>
+									<p>If you wanted to spin up more than one EC2 in the frontend or the backend we will provide a load balancer in each auto scaling group. So, you can easily scale the production or development, frontend and backend. </p>
+									<span class="image main-smaller"><img src="images/architecture.jpg" alt="" /></span>
+
+									<hr class="major" />
+									<h2>Documentation</h2>
+									<p><b>handoff:</b> <a href="assets/pdf/Handoff team B3.docx.pdf" download="Handoff_Team_B3.pdf">handoff project 4.0 elision team b3</a></p>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Homepage</a></li>
+									<li><a href="about_me.html">About me</a></li>
+									<li><a href="stage.html">Internship</a></li>
+									<li>
+										<span class="opener">Realisaties</span>
+										<ul>
+											<li><a href="Ondernemende_student.html">Night of the Entrepreneurial Student</a></li>
+											<li><a href="IT_HACKTORY.html">IT HACKTORY</a></li>
+											<li><a href="Project4_0.html">PROJECT 4.0</a></li>
+											<li><a href="IOT.html">IOT Project</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+						<!-- Section 
+							<section>
+								<header class="major">
+									<h2>Ante interdum</h2>
+								</header>
+								<div class="mini-posts">
+									<article>
+										<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+									<article>
+										<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+									</article>
+								</div>
+								<ul class="actions">
+									<li><a href="#" class="button">More</a></li>
+								</ul>
+							</section> -->
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Get in touch</h2>
+								</header>
+								<p>Thank you for visiting my portfolio website! If you have any inquiries or would like to discuss potential collaborations, I kindly request that you reach out to me via email or phone. Please note that while I am deeply focused on my work, I make a dedicated effort to respond promptly to all messages.</p>
+
+								<p>Due to the nature of my work, my phone is usually locked away to minimize distractions. Therefore, I highly recommend contacting me through email as the most reliable and efficient means of communication. However, if your matter is urgent or requires immediate attention, please feel free to give me a call.</p>
+									
+								<p>To contact me, please use the details given below:</p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="mailto:adanasit.rune@gmail.com" target="_blank">adanasit.rune@gmail.com</a></li>
+									<li class="icon solid fa-phone">+32 487 79 18 42</li>
+									<li class="icon solid fa-home">Stokerijstraat 7 <br> 3920 lommel</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Rune Mannaerts.  Base-design: <a href="https://html5up.net/editorial" target="_blank">HTML5 UP</a>.</p>
+							</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
